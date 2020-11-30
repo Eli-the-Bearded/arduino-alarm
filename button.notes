@@ -1,0 +1,50 @@
+	   i 5 g s s
+	   n v n c c
+	   t | d l a
+	   | | | | |
+	   b o r y g
+	   r n e e r
+	   o a d l e
+	   w n | l e
+	   n g | o n
+	   | e | w |
+	   \ | | | /
+	    \ \|/ /
+	     |||||
+         my connector    connector is on right side, when viewing back with
+             |||||       text oriented normally (so adafruit flower and logo
+             |||||       is under buttons v13/v12)
+             |||||     
+.-----. .-----. .-----. .-----.
+[ v12 ] [ v8  ] [ v4  ] [ v0  ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue
+.-----. .-----. .-----. .-----.
+[ v13 ] [ v9  ] [ v5  ] [ v1  ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue      board 1, address 0x70 (no jumpers)
+.-----. .-----. .-----. .-----.
+[ v14 ] [ v10 ] [ v6  ] [ v2  ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue
+.-----. .-----. .-----. .-----.
+[ v15 ] [ v11 ] [ v7  ] [ v3  ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue     <---------------< 2 boards side by side
+.-----. .-----. .-----. .-----.
+[ v28 ] [ v24 ] [ v20 ] [ v16 ]     
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue
+.-----. .-----. .-----. .-----.
+[ v29 ] [ v25 ] [ v21 ] [ v17 ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue      board 1, address 0x72 (jumper A1 connected)
+.-----. .-----. .-----. .-----.
+[ v30 ] [ v26 ] [ v22 ] [ v18 ]
+`-----' `-----' `-----' `-----'
+ white    red   yellow   blue
+.-----. .-----. .-----. .-----.
+[ v31 ] [ v27 ] [ v23 ] [ v19 ] <-- orange
+`-----' `-----' `-----' `-----'
+ orange  orange  orange  orange
+

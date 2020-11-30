@@ -1,0 +1,44 @@
+Sample code from
+https://create.arduino.cc/projecthub/MisterBotBreak/how-to-use-a-real-time-clock-module-ds3231-bc90fe
+
+Used ../rtc_ds3231/rtc_ds3231.ino-settime to set time originally.
+That's a big program and uses ~35% of Uno memory. This is down to
+about 24% while also controlling the Trellis buttons and LCD screen.
+
+   Program:    7936 bytes (24.2% Full)
+   (.text + .data + .bootloader)
+
+   Data:        680 bytes (33.2% Full)
+   (.data + .bss + .noinit)
+
+This is a demo of all important functionality for the alarm clock:
+
+An LCD screen that gets written to, with a backlight that turns on and off.
+Trellis array of 32 buttons and LEDs each individually controlled. (I2C)
+A real time clock that gets polled every second. (I2C)
+A buzzer that goes on and off.
+A button separate from the Trellis that gets checked.
+
+On the Uno, uses:
+	SCL/SCA		for I2C
+	A2 for Trellis INT (not sure if needed)
+	pins 5 to 12 for LCD and LCD backlight
+	pin 3 for buzzer
+	pin 2 for extra button (alarm turn off button)
+	5v to power LCD and I2C
+        Ground
+
+Unused pin AREF
+       pin 13 (connects to on-board LED anyway)
+       pin 4
+       pins 1 and 0 (used during programming)
+
+(other side)
+       pin IOREF
+       pin RESET
+       pin 3.3v
+       pin Vin
+       pins A0, A1, A3, A4, A5
+
+BEG, 2020 Nov 29
+
