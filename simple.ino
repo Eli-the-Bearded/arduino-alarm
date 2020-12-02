@@ -7,7 +7,7 @@
 // Hitachi HD44780 LCD
 #include "lcd-setup.h"
 
-// ds3231 is a real time clock 12c component
+// ds3231 is a real time clock i2c component
 #include "ds3231.h"
 
 // Trellis is an i2c buttons with LEDs system
@@ -58,8 +58,8 @@ void setup() {
   //Serial.print("size of uptime : ");
   //Serial.print(sizeof(unsigned long));  == 4
 
-  //lcd.print("Hello, alarm clock");
-  lcd.print("Hello, ");
+  lcd.setCursor(0, 0);
+  lcd.print("Hello, alarm clock");
   //         12345678901234567890
   lcd.write(        2);
   lcd.write(         1);

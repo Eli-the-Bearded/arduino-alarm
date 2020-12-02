@@ -42,24 +42,66 @@ LiquidCrystal lcd(RS_PIN, ENABLE_PIN, D4_PIN, D5_PIN, D6_PIN, D7_PIN);
 #define LCD_COL_COUNT 20
 #define LCD_ROW_COUNT  4
 
+/*
+page 17 of data sheet has font reference
+Looking for good matched pairs of upper / lower
+  %     DF / A1
+  DB    A2 / A3
+  O     ^  / v
+  :     A5 / .
+  \     `  / A4
+  ^whoops, is yen sign
+*/
+
 byte bell[8] = {
   0b00100,
   0b01010,
   0b01010,
   0b10001,
-  0b10001,
+  0b10101,
   0b11111,
   0b00100,
 };
 
 byte nobell[8] = {
+  0b00000,
+  0b10001,
+  0b01010,
   0b00100,
   0b01010,
-  0b11010,
-  0b11001,
-  0b10101,
-  0b11111,
-  0b00101,
+  0b10001,
+  0b00000,
+  0b00000,
+};
+
+byte setupper[8] = {
+  0b01100,
+  0b11110,
+  0b10010,
+  0b00000,
+  0b00000,
+  0b00000,
+  0b00000,
+};
+
+byte setlower[8] = {
+  0b00000,
+  0b00000,
+  0b00000,
+  0b00000,
+  0b10010,
+  0b11110,
+  0b01100,
+};
+
+byte setboth[8] = {
+  0b01100,
+  0b11110,
+  0b10010,
+  0b00000,
+  0b10010,
+  0b11110,
+  0b01100,
 };
 
 #endif
