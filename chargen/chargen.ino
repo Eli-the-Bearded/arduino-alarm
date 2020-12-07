@@ -3,9 +3,9 @@
 #include <LiquidCrystal.h>
 
 // Hitachi HD44780 LCD
-#include "lcd-setup.h"
+#include "../include/lcd-setup.h"
 
-#include "misc-setup.h"
+#include "../include/misc-setup.h"
 
 uint16_t backlight_time;
 
@@ -24,6 +24,8 @@ void setup() {
   backlight_time = INIT_BACKLIGHT_TIME;
 }
  
+// this is everything, but you can edit it down to just defined
+// characters and make it more meaningful
 uint8_t charset[256] = {
         00, 01, 02, 03, 04, 05, 06, 07, 010, 011, 012, 013, 014,
         015, 016, 017, 020, 021, 022, 023, 024, 025, 026, 027,

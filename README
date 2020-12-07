@@ -1,10 +1,7 @@
 Exploratory programs for an alarm clock
 
 
-asciiart.ino-HOLD
-
-To build:
-Rename to asciiart.ino (and rename any other .ino file to .ino-HOLD)
+asciiart/
 
 This program looks at "ascii" art ways to represent two alarms in a
 single character block. I'll want to use no more than three 20 char lines
@@ -16,10 +13,7 @@ ASCII art to do that.
 
 
 
-chargen.ino-tmp 
-
-To build:
-Rename to asciiart.ino (and rename any other .ino file to .ino-HOLD)
+chargen/
 
 This program emulates the old inet chargen service. It shows all of
 the built-in 5x8 font characters. On my 20x4 screen, I use the top
@@ -34,7 +28,12 @@ before jump; or somewhere in between.
 
 
 
-simple.ino
+sound/
+
+Speaker test code, for "active" and "passive" buzzers.
+
+
+simple/
 
 
 This is a demo of all important functionality for the alarm clock:

@@ -34,7 +34,7 @@
 
 #include <Wire.h>
 #include <stdio.h>
-#include "ds3231.h"
+#include "../rtc-ds3231/ds3231.h"
 
 #ifdef __AVR__
  #include <avr/pgmspace.h>

@@ -22,7 +22,7 @@
   #include <Wire.h>
 #endif
 
-#include "Adafruit_Trellis.h"
+#include "../adatrellis/Adafruit_Trellis.h"
 
 #define HT16K33_BLINK_CMD       0x80
 #define HT16K33_BLINK_DISPLAYON 0x01

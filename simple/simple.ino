@@ -5,15 +5,15 @@
 #include <LiquidCrystal.h>
 
 // Hitachi HD44780 LCD
-#include "lcd-setup.h"
+#include "../include/lcd-setup.h"
 
 // ds3231 is a real time clock i2c component
-#include "ds3231.h"
+#include "../rtc-ds3231/ds3231.h"
 
 // Trellis is an i2c buttons with LEDs system
-#include "trellis-setup.h"
+#include "../include/trellis-setup.h"
  
-#include "misc-setup.h"
+#include "../include/misc-setup.h"
 
 struct ts t; 
 

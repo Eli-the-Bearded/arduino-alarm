@@ -1,6 +1,6 @@
 #ifndef __trellis_setup_h_
 #define __trellis_setup_h_
-#include "Adafruit_Trellis.h"
+#include "../adatrellis/Adafruit_Trellis.h"
 
 #define NUMTRELLIS 2
 #define numKeys (NUMTRELLIS * 16)

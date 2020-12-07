@@ -17,25 +17,23 @@
 
 
 // Name the Arduino outputs for the Hitachi functions
-#define RS_PIN      7
-#define ENABLE_PIN  8
-#define D4_PIN      9
-#define D5_PIN     10
-#define D6_PIN     11
-#define D7_PIN     12
+#define BACKLIGHT_PIN    5	/* labeled "A" on screen / analog arduino */
+#define CONTRAST_PIN     6	/* labeled "V0" on screen / analog arduino */
+#define RS_PIN      	 7
+#define ENABLE_PIN  	 8
+#define D4_PIN      	 9
+#define D5_PIN     	10
+#define D6_PIN     	11
+#define D7_PIN     	12
 
 // These are all simple digital out
 LiquidCrystal lcd(RS_PIN, ENABLE_PIN, D4_PIN, D5_PIN, D6_PIN, D7_PIN);
 
 // Analog out
-// Backlight is labeled "A"
-#define BACKLIGHT_PIN    5
 #define INIT_BACKLIGHT  50
 #define STOP_BACKLIGHT   0
 
-// Contrast is labeled V0
 // might not use, might use trim pot instead
-#define CONTRAST_PIN    6
 #define INIT_CONTRAST  50
 
 // 16x2 is common side, this is a bigger screen

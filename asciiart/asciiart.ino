@@ -3,9 +3,9 @@
 #include <LiquidCrystal.h>
 
 // Hitachi HD44780 LCD
-#include "lcd-setup.h"
+#include "../include/lcd-setup.h"
 
-#include "misc-setup.h"
+#include "../include/misc-setup.h"
 
 uint16_t backlight_time;
 

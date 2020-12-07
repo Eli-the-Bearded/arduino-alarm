@@ -7,7 +7,7 @@
 //#include <WProgram.h>
 //#endif
 
-#include "config.h"
+#include "../include/config.h"
 
 #define	DS3231_TRANSACTION_TIMEOUT	100 // Wire NAK/Busy timeout in ms
 
